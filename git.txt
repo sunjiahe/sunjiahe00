@@ -1,0 +1,31 @@
+国内镜像下载地址
+https://npm.taobao.org/mirrors/git-for-windows/
+
+git init  初始化git，是为了让Git对一个文件夹的文件进行版本控制，初始化完成之后会默认生成一个.git目录.
+配置git的全局信息
+用户邮箱：git config --global user.email "邮箱"
+用户名：git config --global user.name "用户名"
+查看全局配置：git config --global --list
+
+常见提交查看命令
+git status 查看当前的工作区的状态，检查是否有未提交的文件
+git add 文件名 添加指定的文件
+git commit -m "提交信息" 提交添加的文件 -m指定提交信息 必须加上
+查看方式
+git log 查看已提交的历史记录
+git log --pretty=oneline  一行显示版本号
+git reflog 查看带版本号的历史记录
+git reset --hard HEAD^ 回退到上一个版本，一个^代表一个版本，如果回退到上上个版本git reset --hard HEAD^^
+git reset --hard 版本号  回退到指定的版本，需要指定版本号
+git checkout -- 文件  修改完工作区内容之后，不想add和commit 可以进行撤销操作
+工作区修改的文件已经add进暂存区但是未提交，执行撤销操作
+git reset HEAD 文件
+git checkout -- 文件
+分支操作
+git checkout -b 分支名字   创建一个分支
+git branch	查看当前所有的分支，并且可以看到当前所处的分支
+git checkout 分支名   切换分支
+git branch -d 分支名  删除分支(不能再当前分支下执行操作，需要切换到其它分支) 
+https://github.com/tsh989/practiseday0828.git
+
+git分支中主分支master
